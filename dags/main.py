@@ -7,7 +7,7 @@ def helloWorld():
               
 with DAG(dag_id="hello_world_dag",
          start_date=datetime(2024,3,24),
-         schedule_interval="* * * * *",
+         schedule="0 0 * * *",
          catchup=False) as dag:
     
 
